@@ -45,6 +45,11 @@
     text-decoration: none;
 }
 
+.link:hover{
+    color: red;
+    text-decoration: underline;
+}
+
 .search-icon{
     display: inline-block;
     color: #000000;
@@ -56,4 +61,244 @@
     color: #000000;
     width: 36px;
     height: 36px;
+}
+
+
+.banner-conteiner{
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-content{
+    max-width: 582px;
+}
+
+.header-title{
+    font-size: 3.25rem;
+    font-weight: bold;
+    line-height: 70px;
+    color: #3A3A3A;
+}
+
+.banner-descristion{
+    font-weight: 600;
+    color: #3A3A3A;
+    margin: 16px 0;
+}
+
+.left-content button{
+    font-weight: bold;
+    color: #FFFFFF;
+    background-color: #E02C6D;
+    padding: 10px 28px;
+    border-radius: 50px;
+    border: none;
+}
+
+
+.right-content{
+    background-image: url("../images/Circle\ design.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-right: 50px;
+}
+
+
+
+.logo-section{
+    max-width: 1110px;
+    margin: 80px auto 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-top: 1px solid rgba(192, 204, 218, 1);
+    border-bottom: 1px solid rgba(192, 204, 218, 1);
+    padding: 20px 0;
+}
+
+/* main section  */
+
+.popular-collection{
+    max-width: 1047px;
+    margin: 0 auto;
+}
+
+.collection-title{
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: #3A3A3A;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.collection-card-conteiner{
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.card{
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+.card-img{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.card-title{
+    font-size: 1.75rem;
+    font-weight: 500;
+    color: #18191F;
+    margin: 12px 0 6px 0;
+}
+
+.price{
+    font-size: 1.3rem;
+    color: #000000;
+}
+
+.card-description{
+    font-size: 0.875rem;
+    font-weight: bold;
+    line-height: 143%;
+    letter-spacing: 1.8%;
+    color: #787885;
+    margin-bottom: 16px;
+}
+
+.see-more{
+    text-align: right;
+}
+
+.see-more button{
+    font-weight: bold;
+    color: #E02C6D;
+    background-color: transparent;
+    border: none;
+}
+
+/* feature products */
+
+
+.feature-products{
+    max-width: 1110px;
+    margin: 80px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 80px;
+}
+
+.feature-products img{
+    width: 100%;
+}
+
+.feature-products-right-content h2{
+    font-size: 2rem;
+    font-weight: bold;
+    color: #0A0826;
+}
+
+.feature-products-right-content p{
+    font-weight: bold;
+    color: #6C6C6C;
+    margin: 16px 0;
+}
+
+.feature-products-right-content button{
+    font-weight: bold;
+    color: #FFFFFF;
+    background-color: #E02C6D;
+    padding: 12px 25px;
+    border: none;
+}
+
+
+/* footer section */
+
+.footer-conteiner{
+    background-color: #0A0826;
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.footer-conteiner h3{
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.copyright{
+    display: block;
+    font-weight: bold;
+    color: #D9DBE1;
+    margin: 3px 0;
+}
+
+.footer-menubar ul{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 16px;
+}
+
+.footer-menubar li{
+    list-style-type: none;
+}
+
+.footer-menubar li a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+/* mobile device view */
+
+@media screen and (max-width: 768px) {
+    .navbar{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .menu-bar, .menu-links{
+        flex-direction: column;
+    }
+
+    .menu-links{
+        margin-top: 20px;
+    }
+
+
+    .banner-conteiner{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .logo-section{
+        flex-wrap: wrap;
+        border: none;
+        gap: 30px;
+        padding: 0 20px;
+    }
+
+    .collection-card-conteiner{
+        grid-template-columns: 1fr;
+    }
+
+    .popular-collection{
+        padding: 0 20px;
+    }
+
+    .feature-products{
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 0 20px;
+    }
+
 }
